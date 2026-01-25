@@ -59,7 +59,7 @@ class Player:
 
     def get_descriptive_name(self) -> str:
         return (getColored(self.name, self.team_color) 
-                + getColored(f', has {self.get_team_name(self.piece_color)} Pieces', self.piece_color))
+                + getColored(f', has {self.get_team_name(self.piece_color)} {self.piece} Pieces', self.piece_color))
 
 class SabotageConnect4:
     ROWS: int = 6
@@ -70,10 +70,10 @@ class SabotageConnect4:
     # Players is in order of moves, so that modulus can be used to determine current player
     # Keep player number equal to its index in the list
     PLAYERS = [
-        Player(0, "Red Team's Normal", team_color=COLOR.RED),
-        Player(1, "Yellow Team's Normal", team_color=COLOR.YELLOW),
-        Player(2, "Red Team's Spy", team_color=COLOR.RED, is_sabotage=True),
-        Player(3, "Yellow Team's Spy", team_color=COLOR.YELLOW, is_sabotage=True),
+        Player(0, "Red Team Normal", team_color=COLOR.RED),
+        Player(1, "Yellow Team Spy", team_color=COLOR.YELLOW, is_sabotage=True),
+        Player(2, "Yellow Team Normal", team_color=COLOR.YELLOW),
+        Player(3, "Red Team Spy", team_color=COLOR.RED, is_sabotage=True),
     ]
 
     # Valid Inputs
