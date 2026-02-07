@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabotage Connect-4</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" async defer></script>
+</head>
+<body>
+    <h1>Sabotage Connect 4</h1>
+    <div id="rules">
+        <h2>Rules</h2>
+        <p>Connect 4 pieces of the same color in a row/column/diagonal to win.</p>
+        <br>
+        <p>Each team has a spy, who has the pieces of the opposite color. 
+            For example, the RED spy has YELLOW pieces, 
+            but is trying to help the RED team win.</p>
+        <br>
+        <p>Player order is Red Normal, Yellow Spy, Yellow Normal, Red Spy, and then it repeats.</p>
+    </div>
+    <div id="playerInfo">
+        <button id="newGameBtn">New Game</button>
+        <button id="undoBtn">Undo</button>
+        <br>
+        <div id="turnIndicator">
+            <span id="playerName"></span>
+        </div>
+    </div>
+    <div id="labels">
+        <div class="label">1</div>
+        <div class="label">2</div>
+        <div class="label">3</div>
+        <div class="label">4</div>
+        <div class="label">5</div>
+        <!-- Don't use 6,7 bc of the meme -->
+        <div class="label">8</div>
+        <div class="label">9</div>
+    </div>
+    <div id="container">
+        <div class="col">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+        <div class="col">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+        <div class="col">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+        <div class="col">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+        <div class="col">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+        <div class="col">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+        <div class="col">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+    </div>
+</body>
+</html>
